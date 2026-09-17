@@ -7,3 +7,4 @@ venv/
 .env
 dist/
 build/
+frontend/node_modules
