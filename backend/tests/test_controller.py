@@ -1,15 +1,15 @@
 import pytest
 
-from model_access.classifier import KeywordTaskClassifier
-from model_access.contracts import GenerationRequest, ModelConfig, TaskType
-from model_access.controller import ModelAccessController
-from model_access.errors import (
+from backend.src.model_access.classifier import KeywordTaskClassifier
+from backend.src.model_access.contracts import GenerationRequest, ModelConfig, TaskType
+from backend.src.model_access.controller import ModelAccessController
+from backend.src.model_access.errors import (
     InvalidRequestError,
     ProviderTimeoutError,
     ProviderUnavailableError,
     RouteNotConfiguredError,
 )
-from model_access.routing import ModelRouter
+from backend.src.model_access.routing import ModelRouter
 
 
 class FakeProvider:

@@ -1,8 +1,8 @@
 import pytest
 
-from model_access.contracts import ModelConfig, TaskType
-from model_access.errors import RouteNotConfiguredError
-from model_access.routing import ModelRouter
+from backend.src.model_access.contracts import ModelConfig, TaskType
+from backend.src.model_access.errors import RouteNotConfiguredError
+from backend.src.model_access.routing import ModelRouter
 
 
 def test_router_returns_configuration_for_task_type() -> None:

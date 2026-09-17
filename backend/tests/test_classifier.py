@@ -1,5 +1,5 @@
-from model_access.classifier import KeywordTaskClassifier
-from model_access.contracts import TaskType
+from backend.src.model_access.classifier import KeywordTaskClassifier
+from backend.src.model_access.contracts import TaskType
 
 
 def test_coding_prompt_is_classified_as_coding() -> None:

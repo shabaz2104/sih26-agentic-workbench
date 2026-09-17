@@ -5,13 +5,13 @@ from urllib.error import URLError
 
 import pytest
 
-from model_access.contracts import GenerationRequest, ModelConfig
-from model_access.errors import (
+from backend.src.model_access.contracts import GenerationRequest, ModelConfig
+from backend.src.model_access.errors import (
     ProviderResponseError,
     ProviderTimeoutError,
     ProviderUnavailableError,
 )
-from model_access.providers.openai_compatible import OpenAICompatibleProvider
+from backend.src.model_access.providers.openai_compatible import OpenAICompatibleProvider
 
 
 class FakeHTTPResponse:
